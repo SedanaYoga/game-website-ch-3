@@ -1,3 +1,4 @@
+@use '../custom' as *;
 // ABSOLUTE CENTER
 @mixin absoluteCenter {
   position: absolute;
@@ -11,4 +12,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@mixin mainGradient {
+  background: linear-gradient(194.68deg, $orange-light 11.27%, #f3af34 90.4%);
 }

@@ -23,5 +23,26 @@ $gray-secondary: $gray-800;
 $primary: $orange-light;
 $secondary: $gray-secondary;
 
+// CAROUSEL
+
+$carousel-indicator-width: 10px;
+$carousel-indicator-height: 10px;
+$carousel-indicator-spacer: 1rem;
+
+$carousel-control-icon-width: 2rem;
+
+$carousel-control-prev-icon-bg: url(/images/prev.svg);
+$carousel-control-next-icon-bg: url(/images/next.svg);
+
+.carousel-indicators {
+  [data-bs-target] {
+    width: $carousel-indicator-width;
+    height: $carousel-indicator-height;
+    margin-right: $carousel-indicator-spacer;
+    margin-left: $carousel-indicator-spacer;
+    border-radius: 50%;
+  }
+}
+
 // IMPORT BOOTSTRAP CSS V5
 @import '../node_modules/bootstrap/scss/bootstrap.scss';

@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 50%;
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -6007,11 +6015,11 @@ textarea.form-control-lg {
   } ]
 } */
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+  background-image: url(/images/prev.svg);
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url(/images/next.svg);
 }
 
 .carousel-indicators {
@@ -6031,11 +6039,11 @@ textarea.form-control-lg {
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
+  width: 10px;
+  height: 10px;
   padding: 0;
-  margin-right: 3px;
-  margin-left: 3px;
+  margin-right: 1rem;
+  margin-left: 1rem;
   text-indent: -999px;
   cursor: pointer;
   background-color: #fff;
@@ -11235,6 +11243,9 @@ textarea.form-control-lg {
     padding: 0 1rem;
   }
 }
+.intro__info .main-btn {
+  background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+}
 .intro__scroll {
   position: absolute;
   height: auto;
@@ -11260,6 +11271,91 @@ textarea.form-control-lg {
 .intro__scroll a span {
   display: block;
   margin-top: 8px;
+}
+
+.gameplay {
+  position: relative;
+  padding-top: 3rem;
+  max-width: 100%;
+  height: 100vh;
+  background-image: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #000000 99.74%), url(../../images/the-games-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+.gameplay::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.5);
+  z-index: 1;
+}
+.gameplay__info {
+  font-family: Arial;
+  font-weight: 400;
+  text-align: left;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+.gameplay__info--subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+.gameplay__info--title {
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 3px;
+}
+.gameplay .carousel-control-prev-icon {
+  position: absolute;
+  left: 0;
+}
+@media (min-width: 768px) {
+  .gameplay .carousel-control-prev-icon {
+    left: -3rem;
+  }
+}
+.gameplay .carousel-control-next-icon {
+  position: absolute;
+  right: 0;
+}
+@media (min-width: 768px) {
+  .gameplay .carousel-control-next-icon {
+    right: -3rem;
+  }
+}
+.gameplay .carousel-indicators__bullet {
+  background-color: unset;
+  border: 3px solid #fff;
+}
+.gameplay .carousel-item {
+  position: relative;
+  max-width: 858px;
+  min-height: 477px;
+  overflow: hidden;
+  object-fit: cover;
+}
+@media (max-width: 1199.98px) {
+  .gameplay .carousel-item {
+    max-width: 100%;
+    height: 477px;
+  }
+}
+.gameplay .carousel-item__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+.gameplay .carousel {
+  max-width: 858px;
 }
 
 /*# sourceMappingURL=style.css.map */
