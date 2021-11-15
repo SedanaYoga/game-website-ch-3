@@ -44,5 +44,34 @@ $carousel-control-next-icon-bg: url(/images/next.svg);
   }
 }
 
+$accordion-padding-y: 1rem;
+$accordion-padding-x: 1.25rem;
+$accordion-color: $primary;
+$accordion-bg: none;
+$accordion-border-color: none;
+$accordion-border-radius: none;
+
+$accordion-body-padding-y: $accordion-padding-y;
+$accordion-body-padding-x: $accordion-padding-x;
+
+$accordion-button-padding-y: $accordion-padding-y;
+$accordion-button-padding-x: $accordion-padding-x;
+$accordion-button-color: $primary;
+$accordion-button-bg: none;
+$accordion-button-active-bg: none;
+$accordion-button-active-color: none;
+
+$accordion-button-focus-border-color: unset;
+$accordion-button-focus-box-shadow: unset;
+
+$accordion-icon-width: 1.25rem;
+$accordion-icon-color: none;
+$accordion-icon-active-color: none;
+$accordion-icon-transition: transform 0.2s ease-in-out;
+$accordion-icon-transform: rotate(-180deg);
+
+$accordion-button-icon: none;
+$accordion-button-active-icon: none;
+
 // IMPORT BOOTSTRAP CSS V5
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
