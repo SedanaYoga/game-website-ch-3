@@ -3,10 +3,93 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <title>Challenge 3 Binar</title>
   </head>
   <body>
+    <!-- NAVBAR - MAIN MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top py-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse row" id="navbarNav">
+          <ul class="navbar-nav col-lg-7 offset-lg-2 px-2 px-lg-0 px-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">WORK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT ME</a>
+            </li>
+          </ul>
+          <ul
+            class="navbar-nav col-lg-3 justify-content-end px-2 px-lg-0 px-md-0"
+          >
+            <li class="nav-item"><a href="#" class="nav-link">SIGN UP</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">LOGIN</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- INTRO - MAIN CALL TO ACTION -->
+    <section id="intro" class="intro">
+      <div class="container-fluid">
+        <div class="intro__info">
+          <h1 class="text-uppercase text-white">Play traditional game</h1>
+          <h3 class="text-white py-4">Experience new traditional game play</h3>
+          <button type="button" class="btn btn-primary main-btn">
+            PLAY NOW
+          </button>
+        </div>
+        <div class="intro__scroll">
+          <a href="#">
+            The Story
+            <span>
+              <svg
+                width="23"
+                height="12"
+                viewBox="0 0 23 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.5786 1.83362H1.32422L11.338 10.0027L21.5786 1.83362Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <script src="./assets/js/bootstrap.bundle.js"></script>
   </body>
 </html>

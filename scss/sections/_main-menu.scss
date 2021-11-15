@@ -1,0 +1,33 @@
+@use '../custom' as *;
+.menu {
+  background-color: #00000080;
+  letter-spacing: 0.1rem;
+  @include media-breakpoint-down(sm) {
+    padding: 0 1rem;
+  }
+  @include media-breakpoint-down(md) {
+    background-color: #000000;
+  }
+  li {
+    a {
+      color: $white !important;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+  }
+  .navbar-brand {
+    color: #fff !important;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 33px;
+  }
+  .navbar-nav {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .nav-item {
+    padding: 0 1.2rem;
+    line-height: 16px;
+  }
+}
