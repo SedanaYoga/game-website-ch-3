@@ -10,7 +10,16 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 $black: #000;
-
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  features-content: 382px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
 // FONT FAMILY
 $font-family-sans-serif: 'Open Sans', Arial, sans-serif;
 
