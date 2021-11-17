@@ -18,17 +18,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
-  .sysreq-question {
+  &-question {
     @include smText;
   }
 
-  .sysreq-info {
+  &-info {
     margin-top: 4rem;
     &__title {
       @include titleText;
     }
     &__table {
-      margin-top: 1.5rem;
+      margin: 1.5rem 0;
       display: grid;
       grid-template: 1fr 1fr;
       grid-template-rows: auto;
@@ -36,7 +36,6 @@
         'os processor'
         'memory storage'
         'graphics graphics';
-
       &--title {
         @include subtitleText;
         color: #ffb548;
@@ -51,32 +50,40 @@
         color: $white;
       }
       &--os {
+        padding: 1rem 1rem 2rem;
+        border: 1px solid #4b4b4b;
         grid-area: os;
       }
       &--processor {
+        padding: 1rem 1rem 2rem;
+        border: 1px solid #4b4b4b;
         grid-area: processor;
       }
       &--memory {
+        padding: 1rem 1rem 2rem;
+        border: 1px solid #4b4b4b;
         grid-area: memory;
       }
       &--storage {
+        padding: 1rem 1rem 2rem;
+        border: 1px solid #4b4b4b;
         grid-area: storage;
       }
       &--graphics {
+        padding: 1rem 1rem 2rem;
+        border: 1px solid #4b4b4b;
         grid-area: graphics;
-        border: none !important;
         .sysreq-info__table--subtitle {
           padding-bottom: 2rem !important;
         }
-        background: url(/images/vector-table.svg);
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
+        border-image-source: url(/images/vector-table.svg) !important;
+        border-image-slice: 30 !important;
+        border-image-width: 20 !important;
+        border-image-repeat: round;
       }
-      > div {
-        padding: 1rem 1rem 2rem;
-        border: 1px solid #4b4b4b;
-      }
+      // > div {
+
+      // }
     }
   }
 }
