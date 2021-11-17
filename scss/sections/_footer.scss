@@ -7,10 +7,6 @@
   padding-top: 3rem;
   max-width: 100%;
   height: 100vh;
-  background: salmon;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
   z-index: 0;
 
   .footer-statue {
@@ -99,6 +95,7 @@
   .footer-sm {
     width: 100%;
     min-height: 4rem;
+    text-transform: uppercase;
     @include flexRowCenter;
     @include media-breakpoint-down(md) {
       @include flexColumnCenter;

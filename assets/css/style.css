@@ -12486,7 +12486,7 @@ textarea.form-control-lg {
   padding-top: 3rem;
   max-width: 100%;
   height: 100vh;
-  background-image: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080a0b 99.74%), url(/images/requirements-edit.png);
+  background-image: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #000 99.74%), url(/images/requirements-edit.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12573,7 +12573,7 @@ textarea.form-control-lg {
   padding-top: 3rem;
   max-width: 100%;
   height: 100vh;
-  background-image: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(35, 15, 15, 0) 0%, rgba(0, 0, 0, 0) 60.1%, #000 99%), url(/images/top-score-bg.png);
+  background-image: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(35, 15, 15, 0) 0%, rgba(0, 0, 0, 0) 50.1%, #020202 99%), url(/images/top-score-bg.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12693,10 +12693,6 @@ textarea.form-control-lg {
   padding-top: 3rem;
   max-width: 100%;
   height: 100vh;
-  background: salmon;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
   z-index: 0;
 }
 .footer .footer-statue {
@@ -12782,6 +12778,7 @@ textarea.form-control-lg {
 .footer .footer-sm {
   width: 100%;
   min-height: 4rem;
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
