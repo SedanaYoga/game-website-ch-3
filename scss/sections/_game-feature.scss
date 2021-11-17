@@ -15,6 +15,10 @@
       #080a0b 99.74%
     ),
     url(/images/features-edit.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 3;
   @include media-breakpoint-down(lg) {
     &::after {
       content: '';
@@ -30,10 +34,7 @@
   @include media-breakpoint-down(sm) {
     padding-left: 1rem;
   }
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 3;
+
   &__info {
     @include flexColumnCenter;
     align-items: flex-start;
