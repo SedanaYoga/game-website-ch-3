@@ -6350,11 +6350,11 @@ textarea.form-control-lg {
   } ]
 } */
 .carousel-control-prev-icon {
-  background-image: url(./images/prev.svg);
+  background-image: unset;
 }
 
 .carousel-control-next-icon {
-  background-image: url(./images/next.svg);
+  background-image: unset;
 }
 
 .carousel-indicators {
@@ -12310,6 +12310,8 @@ textarea.form-control-lg {
 }
 .gameplay .carousel-control-prev-icon {
   position: absolute;
+  font-size: 3rem;
+  top: 45%;
   left: 0;
 }
 @media (min-width: 768px) {
@@ -12319,11 +12321,13 @@ textarea.form-control-lg {
 }
 .gameplay .carousel-control-next-icon {
   position: absolute;
-  right: 0;
+  font-size: 3rem;
+  top: 45%;
+  right: 1rem;
 }
 @media (min-width: 768px) {
   .gameplay .carousel-control-next-icon {
-    right: -3rem;
+    right: -2rem;
   }
 }
 .gameplay .carousel-indicators__bullet {
@@ -12536,36 +12540,30 @@ textarea.form-control-lg {
   color: #fff;
 }
 .sysreq-info__table--os {
-  padding: 1rem 1rem 2rem;
-  border: 1px solid #4b4b4b;
   grid-area: os;
 }
 .sysreq-info__table--processor {
-  padding: 1rem 1rem 2rem;
-  border: 1px solid #4b4b4b;
   grid-area: processor;
 }
 .sysreq-info__table--memory {
-  padding: 1rem 1rem 2rem;
-  border: 1px solid #4b4b4b;
   grid-area: memory;
 }
 .sysreq-info__table--storage {
-  padding: 1rem 1rem 2rem;
-  border: 1px solid #4b4b4b;
   grid-area: storage;
 }
 .sysreq-info__table--graphics {
-  padding: 1rem 1rem 2rem;
-  border: 1px solid #4b4b4b;
   grid-area: graphics;
   border-image-source: url(../../images/vector-table.svg) !important;
-  border-image-slice: 30 !important;
-  border-image-width: 20 !important;
+  border-image-slice: 40 !important;
+  border-image-width: 40 !important;
   border-image-repeat: round;
 }
 .sysreq-info__table--graphics .sysreq-info__table--subtitle {
   padding-bottom: 2rem !important;
+}
+.sysreq-info__table > div {
+  padding: 1rem 1rem 2rem;
+  border: 1px solid #4b4b4b;
 }
 
 .top-score {

@@ -51,6 +51,8 @@
 
   .carousel-control-prev-icon {
     position: absolute;
+    font-size: 3rem;
+    top: 45%;
     left: 0;
     @include media-breakpoint-up(md) {
       left: -3rem;
@@ -58,9 +60,11 @@
   }
   .carousel-control-next-icon {
     position: absolute;
-    right: 0;
+    font-size: 3rem;
+    top: 45%;
+    right: 1rem;
     @include media-breakpoint-up(md) {
-      right: -3rem;
+      right: -2rem;
     }
   }
   .carousel-indicators__bullet {
