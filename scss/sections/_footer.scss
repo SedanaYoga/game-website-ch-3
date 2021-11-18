@@ -117,7 +117,29 @@
         @include flexRowCenter;
         gap: 1.5rem;
         li {
+          position: relative;
           list-style-type: none;
+          a {
+            color: $white;
+            text-decoration: none;
+          }
+          &::before {
+            content: '';
+            position: absolute;
+            transition: all 500ms ease-in-out;
+          }
+          &:hover {
+            &::before {
+              content: '';
+              position: absolute;
+              width: 50%;
+              height: 3px;
+              bottom: -5px;
+              left: 50%;
+              transform: translateX(-50%);
+              background: $primary;
+            }
+          }
         }
         @include media-breakpoint-down(md) {
           display: none;
@@ -128,6 +150,22 @@
       height: 100%;
       @include flexRowCenter;
       gap: 1.5rem;
+      a {
+        color: $white;
+        text-decoration: none;
+        .bi-facebook:hover {
+          color: #1877f2;
+        }
+        .bi-twitter:hover {
+          color: #1da1f2;
+        }
+        .bi-youtube:hover {
+          color: #cd201f;
+        }
+        .bi-twitch:hover {
+          color: #6441a4;
+        }
+      }
       @include media-breakpoint-down(md) {
         margin-bottom: 1rem;
       }
