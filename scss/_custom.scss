@@ -13,10 +13,15 @@ $black: #000;
 // scss-docs-start grid-breakpoints
 $grid-breakpoints: (
   xs: 0,
-  features-content: 382px,
+  galaxy-fold: 280px,
+  features-3: 298px,
+  features-2: 316px,
+  moto-g4: 360px,
+  features-1: 382px,
   sm: 576px,
   md: 768px,
   lg: 992px,
+  lg-2: 1070px,
   xl: 1200px,
   xxl: 1400px,
 );

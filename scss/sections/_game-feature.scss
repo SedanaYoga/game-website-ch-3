@@ -95,11 +95,22 @@
           left: -1.6rem;
           top: -1.5rem;
           background: $white;
-          @include media-breakpoint-down(features-content) {
+          @include media-breakpoint-down(features-1) {
             height: 145px;
+          }
+          @include media-breakpoint-down(features-2) {
+            top: -2.3rem;
+            height: 160px;
+          }
+          @include media-breakpoint-down(features-3) {
+            top: -2.3rem;
+            height: 180px;
           }
           @include media-breakpoint-up(md) {
             height: 102px;
+          }
+          @include media-breakpoint-up(lg) {
+            height: 125px;
           }
           @include media-breakpoint-up(lg) {
             height: 125px;

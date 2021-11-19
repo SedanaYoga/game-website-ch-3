@@ -29,18 +29,23 @@
       font-size: 72px;
       line-height: 83px;
       letter-spacing: 3px;
-      @include media-breakpoint-down(1070px) {
+      @include media-breakpoint-down(lg-2) {
         font-size: 64px;
       }
       @include media-breakpoint-down(lg) {
         font-size: 48px;
       }
       @include media-breakpoint-down(md) {
-        font-size: 36px;
+        font-size: 42px;
         line-height: 2.5rem;
       }
       @include media-breakpoint-down(sm) {
+        padding: 0 1rem;
         font-size: 32px;
+        line-height: 2.5rem;
+      }
+      @include media-breakpoint-between(galaxy-fold, moto-g4) {
+        font-size: 30px;
         line-height: 2.5rem;
       }
     }
@@ -62,7 +67,7 @@
     height: auto;
     width: 100%;
     // background-color: blue;
-    bottom: 4rem;
+    bottom: 5vh;
     @include flexColumnCenter;
     animation: scrollAnimation 1.8s ease-in infinite;
     a {
