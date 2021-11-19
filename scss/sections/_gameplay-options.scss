@@ -86,7 +86,8 @@
     }
     &__image {
       @include absoluteCenter;
-      height: 100%;
+      width: 100%;
+      min-height: 100%;
     }
   }
   .carousel {
